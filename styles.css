@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+	--primary-color: #3a4052;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  nav {
+    height: 10vh;
+    background: #f0eeee;
+  }
+  .title{
+    z-index: 100;
+    height: 90vh;
+    width: 100%;
+  }
+  .home{
+    height: 80vh;
+    width: 100%;
+  }
+
+.reserve a{
+    background-color: orange;
+    padding: 9px 10px;
+    color: #efeff0;
+}
+  .video-container {
+	position: absolute;
+    left: 0;
+    top: 10vh;
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+	background: var(--primary-color) url(./video/bbq.mp4) no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 70%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 0.5;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.452);
+	position: absolute;
+}
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .nav-links li a {
+    color: rgb(41, 39, 39);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .banner{
+      font-weight: 900;
+      position: absolute;
+      top: 30%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      margin-left: 16px;
+      height: 10vh;
+      color: #efeff0;
+  }
+
+  .banner span{
+    color: orange;
+    font-size: 1rem;
+  }
+
+.banner p{
+    color: rgb(250, 249, 249);
+    font-size: 1.5rem;
+    margin-top: 25px;
+    font-weight: 100;
+  }
+
+ .moses{
+    position: relative;
+    margin: 15px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.context1{
+    padding: 10px;
+}
+.context1 h2{
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    margin: 2rem;
+}
+.context1 h5{
+    margin: 3rem 0;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.context1 p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.context1 img{
+  margin:1.2rem;
+}
+.context1 p{
+    padding: 1rem;
+    font-weight: 100;
+}
+.reservation{
+    padding: 10px 20px;
+    margin-top: 16px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: orange;
+}
+.reservation-2{
+    padding: 10px 20px;
+    margin-top: 16px;
+    border: none;
+}
+
+.images{
+    display: flex;
+}
+
+.moses::after,
+.moses::before {
+    position: absolute;
+    content: '';
+    height: 80px;
+    min-width: 200px;
+    background: #ffffff;
+    top: -7.9em;
+    overflow: hidden;
+    z-index: 0;
+}
+.moses::before {
+    right: 50%;
+    transform: skew(0, -20deg)
+}
+.moses::after {
+    left: 50%;
+    transform: skew(0, 20deg)
+}
+.chev{
+    position: relative;
+    height: 5vh;
+}
+
+.moses2{
+    position: relative;
+    height: 5vh;
+}
+.moses2::after,
+.moses2::before{
+    position: absolute;
+    content: '';
+    height: 80px;
+    min-width: 200px;
+    background: #ffffff;
+    bottom: -1rem;
+    overflow: hidden;
+    z-index: 0;
+}
+.moses2::before {
+    right: 50%;
+    transform: skew(0, -20deg)
+}
+.moses2::after {
+    left: 50%;
+    transform: skew(0, 20deg)
+}
+
+.moses1{
+    position: relative;
+    height: 5vh;
+}
+.moses1::after,
+.moses1::before{
+    position: absolute;
+    content: '';
+    height: 80px;
+    min-width: 200px;
+    background: #ffffff;
+    bottom: -2.4em;
+    overflow: hidden;
+    z-index: 0;
+}
+.moses1::before {
+    right: 50%;
+    transform: skew(0, 20deg)
+}
+.moses1::after {
+    left: 50%;
+    transform: skew(0, -20deg)
+}
+
+.contacts{
+   height: 60vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-image: url('/images/image1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-attachment: fixed;
+}
+
+.footer_banner{
+   height: 60vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-image: url('/images/pexels-viktoria-alipatova-2074122.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.clients{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 0;
+}
+.clients_details{
+    margin-top: 3rem;
+}
+
+.contacts span{
+    margin: 3rem 0;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.contacts h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem 0;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.menu_items{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+align-content: center;
+}
+
+.menu_heading{
+margin: 5.5rem 0;
+font-size: 3rem;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',sans-serif;
+letter-spacing: 2px;
+text-transform:uppercase;
+color: #3a4052;
+text-align:center
+}
+
+.menu_items_flex{
+    margin: 0 3rem;
+}
+.menu_items_flex img{
+    max-width: 200px;
+}
+.menu_items_flex h3{
+    color: var(--primary-color);
+    margin: 2rem 0;
+}
+.menu_items_flex p {
+    font-size: 2.3rem;
+    margin: 2rem 0;
+}
+.menu_items_flex span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.features_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.features_images img{
+    max-width: 200px;
+}
+
+.features{
+    margin: 5.5rem 0;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3a4052;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    text-align:center
+}
+
+.happy_hour{
+    height: 80vh;
+    width: 100%;
+    background-image: url('./images/pexels-elif-tekkaya-6046747.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.happy_hour_context{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.happy_hour_context img{
+    margin: 1rem 0;
+}
+.happy_hour_context h3{
+    color: orange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: 800;
+}
+
+.happy_hour_context h4{
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.happy_hour_context p{
+color:white;
+margin: 1rem 0;
+font-size: 1.2rem;
+}
+
+.reviews{
+    margin: 3rem 0;
+}
+.review_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column-reverse;
+}
+.review_title h4{
+    color: #3a4052;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+.review_title img {
+    margin: 3rem 0;
+}
+.reviews p{
+    margin: 0 3rem;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    padding: 4rem 0;
+    background-color: #3a4052;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer h3{
+    color: orange;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+/* responsive designs */
+@media screen and (max-width: 1029px){
+    .menu_items{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        margin: 0 1rem;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .line {
+      width: 35px;
+      height: 3px;
+      background: rgb(37, 36, 36);
+      margin: 4px;
+    }
+    nav {
+      position: relative;
+    }
+    .features_images{
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .images{
+        flex-direction: column;
+        width: 95%;
+        margin: 20px 0;
+    }
+    .menu_items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 1000;
+      margin: 2px;
+    }
+   
+    .nav-links {
+      position: fixed;
+      background: #efeff0;
+      height: 90vh;
+      width: 100%;
+      padding-bottom: 20px;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      cursor: pointer;
+      z-index:4;
+    }
+    .landing {
+      flex-direction: column;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .nav-links li a {
+      font-size: 15px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 2;
+    }
+  }
